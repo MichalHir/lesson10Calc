@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Number1:<input id="firstNum" /> Number2:<input id="secondNum" /> <br />
+    plus:<button onclick="plus()">+</button> minus:<button onclick="minus()">
+      -
+    </button>
+    <br />
+    result:<input id="result" />
+
+    <script>
+      function plus() {
+        result.value = Number(firstNum.value) + Number(secondNum.value);
+        console.log(Number(firstNum.value) + Number(secondNum.value));
+      }
+      function minus() {
+        result.value = Number(firstNum.value) - Number(secondNum.value);
+        console.log(Number(firstNum.value) - Number(secondNum.value));
+      }
+      //     function copyName() {
+      //     copy.value = myName.value;
+      //   }
+    </script>
+  </body>
+</html>

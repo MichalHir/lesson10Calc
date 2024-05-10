@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="myName" />
+    <input id="copy" />
+    <br />
+    <button onclick="firstName()">first name</button>
+    <button onclick="lastName()">last name</button>
+    <button onclick="date()">date</button>
+    <button onclick="hello()">hello</button>
+    <button onclick="copyName()">copy</button>
+
+    <script>
+      function firstName() {
+        console.log(myName.value);
+      }
+      function lastName() {
+        console.log('Hirsch');
+      }
+      function date() {
+        const d = new Date(2024, 4, 3);
+        console.log(d);
+      }
+      function hello() {
+        console.log('hello ' + myName.value);
+      }
+      function copyName() {
+        copy.value = myName.value;
+      }
+    </script>
+  </body>
+</html>
