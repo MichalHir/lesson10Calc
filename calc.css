@@ -1,0 +1,28 @@
+/* styles.css */
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: aquamarine;
+    padding: 40PX;
+    border:none;
+    font-size: larger;
+    
+}
+input{
+    width: 400px;
+    height: 100PX;
+    border-radius: 10PX;
+    font-size:xx-large;
+    background-color: beige;
+}
+.opButton{
+    background-color: aqua;
+}
+
+#result{
+    color: blue;  
+}
+
+
+    
