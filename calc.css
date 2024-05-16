@@ -34,7 +34,14 @@ input{
     padding: 0px;
     text-align: center;
   }
-  
+  /* .item1 {
+    grid-column: 1 / -1; /* Span the first item across all columns */  
+  /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */ */
 
 
     
