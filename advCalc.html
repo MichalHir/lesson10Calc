@@ -9,27 +9,29 @@
   <body>
     <input id="result" /> <br />
     <br />
-      <button onclick="clearResult()" class="opButton">C</button>
-      <button onclick="mathAction('%')" class="opButton">%</button>
-      <button onclick="mathAction('1/x')" class="opButton">1/x</button>
-      <button onclick="mathAction('x*y')" class="opButton">x*y</button> <br />
-      <button onclick="displayNum(7)">7</button>
-      <button onclick="displayNum(8)">8</button>
-      <button onclick="displayNum(9)">9</button>
-      <button onclick="mathAction('+')" class="opButton">+</button> <br />
-      <button onclick="displayNum(4)">4</button>
-      <button onclick="displayNum(5)">5</button>
-      <button onclick="displayNum(6)">6</button>
-      <button onclick="mathAction('-')" class="opButton">-</button> <br />
-      <button onclick="displayNum(1)">1</button>
-      <button onclick="displayNum(2)">2</button>
-      <button onclick="displayNum(3)">3</button>
-      <button onclick="mathAction('x')" class="opButton">x</button> <br />
-      <button onclick="displayNum('.')">.</button>
-      <button onclick="displayNum(0)">0</button>
-      <button onclick="Equal()" class="opButton">=</button>
-      <button onclick="mathAction('/')" class="opButton">/</button>
-
+    <div class="grid-container">
+      <div class="grid-item"><button onclick="clearResult()" class="opButton">C</button></div>
+      <div class="grid-item"><button onclick="mathAction('%')" class="opButton">%</button></div>
+      <div class="grid-item"><button onclick="mathAction('1/x')" class="opButton">1/x</button></div>
+      <div class="grid-item"><button onclick="mathAction('x*y')" class="opButton">x*y</button></div>
+      <div class="grid-item"><button onclick="displayNum(7)">7</button></div>
+      <div class="grid-item"><button onclick="displayNum(8)">8</button></div>
+      <div class="grid-item"><button onclick="displayNum(9)">9</button></div>
+      <div class="grid-item"><button onclick="mathAction('+')" class="opButton">+</button></div>
+      <div class="grid-item"><button onclick="displayNum(4)">4</button></div>
+      <div class="grid-item"><button onclick="displayNum(5)">5</button></div>
+      <div class="grid-item"><button onclick="displayNum(6)">6</button></div>
+      <div class="grid-item"><button onclick="mathAction('-')" class="opButton">-</button></div>
+      <div class="grid-item"><button onclick="displayNum(1)">1</button></div>
+      <div class="grid-item"><button onclick="displayNum(2)">2</button></div>
+      <div class="grid-item"><button onclick="displayNum(3)">3</button></div>
+      <div class="grid-item"><button onclick="mathAction('x')" class="opButton">x</button></div>
+      <div class="grid-item"><button onclick="displayNum('.')">.</button></div>
+      <div class="grid-item"><button onclick="displayNum(0)">0</button></div>
+      <div class="grid-item"><button onclick="Equal()" class="opButton">=</button></div>
+      <div class="grid-item"><button onclick="mathAction('/')" class="opButton">/</button></div>
+    </div>
+     
     <script>
       let memory;
       let actionType = 0;
@@ -88,7 +90,12 @@
             ).toFixed(2);
             break;
           case 6:
-            result.value = ((1) / (Number(memory))).toFixed(2); // not working
+            if (memory!=0){
+              result.value = ((Number(1)) / (Number(memory))).toFixed(2); 
+            }
+            else {
+              result.value='error'
+            }
             break;
           case 7:
             result.value = Math.pow(

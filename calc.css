@@ -7,22 +7,34 @@ button{
     padding: 40PX;
     border:none;
     font-size: larger;
-    
 }
 input{
-    width: 400px;
+    width: 420px;
     height: 100PX;
     border-radius: 10PX;
     font-size:xx-large;
-    background-color: beige;
+    background-color: aquamarine;
+
 }
 .opButton{
     background-color: aqua;
 }
 
 #result{
-    color: blue;  
+    color: black;  
 }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-gap: 10px;
+  }
+  .grid-item {
+    background-color: rgb(3, 27, 35);
+    padding: 0px;
+    text-align: center;
+  }
+  
 
 
     
